@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+  }
+  
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  /* Top label */
+  .app-header {
+    text-align: center;
+  }
+  
+  .app-name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #c5a953;
+}
+
+  .big-title {
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+  }
+  
+  .app-subtitle {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  /* Main block */
+  .card {
+    background: #6f82b6; /* blue block */
+    padding: 36px 44px;
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    min-width: 320px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Inner content stays white */
+  .card > * {
+    color: white;
+  }
+  
+  h1 {
+    margin: 0 0 20px;
+    font-weight: 600;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+    opacity: 0.95;
+  }
+  
+  /* Goal */
+  .goal {
+    margin-bottom: 18px;
+  }
+  
+  .goal span {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-bottom: 6px;
+  }
+  
+  .goal-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .goal-inputs input {
+    width: 50px;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .goal-inputs span {
+    opacity: 0.8;
+  }
+  
+  /* Timer */
+  #timer {
+    font-size: 3.2rem;
+    margin: 18px 0 26px;
+  }
+  
+  /* Buttons */
+  #controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  button {
+    padding: 10px 22px;
+    font-size: 1rem;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: #222;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 26px 0;
+  }
+  
+  /* Feedback */
+  #feedback {
+    opacity: 0.95;
+  }
+  
+  .progress {
+    background: rgba(255, 255, 255, 0.3);
+    height: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 12px 0;
+  }
+  
+  #visualBar {
+    height: 100%;
+    width: 0%;
+    background: #9fd18b;
+    transition: width 0.4s ease;
+  }
+  
+  /* Summary */
+  #summary {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }

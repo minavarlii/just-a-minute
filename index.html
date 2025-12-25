@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>justaminute</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app-wrapper">
+  
+      <div class="app-header">
+        <div class="app-name">Just a Minute</div>
+      </div>
+  
+      <main class="card">
+        <h1>Focus timer</h1>
+  
+        <div class="goal">
+          <span>Focus goal</span>
+          <div class="goal-inputs">
+            <input id="goalHours" type="number" min="0" value="0">
+            <span>:</span>
+            <input id="goalMinutes" type="number" min="0" max="59" value="1">
+            <span>:</span>
+            <input id="goalSeconds" type="number" min="0" max="59" value="0">
+          </div>
+        </div>
+  
+        <div id="timer">00:00</div>
+  
+        <div id="controls">
+          <button id="startBtn">Start</button>
+          <button id="stopBtn" disabled>Stop</button>
+        </div>
+  
+        <div class="divider"></div>
+  
+        <div id="feedback">
+          <p id="durationText"></p>
+          <p id="gentleText"></p>
+  
+          <div class="progress">
+            <div id="visualBar"></div>
+          </div>
+        </div>
+  
+        <div id="summary">
+          <p id="totalTime"></p>
+          <p id="sessionCount"></p>
+        </div>
+      </main>
+  
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
